@@ -43,12 +43,12 @@ print(uppercase)
 
 #lowercase
 sentence = "Hi my name is Hillary Kollan"
-lowercase =sentence.lower()
+lowercase = sentence.lower()
 print(lowercase)
 
 
 
 #capitalize
 sentence = "haemoglobin"
-uppercase =sentence.capitalize()
+uppercase = sentence.capitalize()
 print(uppercase)
