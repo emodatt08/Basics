@@ -17,3 +17,4 @@ dic = {"Name": "Sadat Kollan", "Age": 90, "Class":"First Class"}
 #totally remove a dictionary
 # del dic
 # print dic
+
