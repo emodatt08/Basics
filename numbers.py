@@ -8,7 +8,7 @@ print(divide)
 remainder = 7%5
 print(remainder)
 
-#square of a number
+#power of a number
 square = 5 ** 2
 print(square)
 
