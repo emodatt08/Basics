@@ -1,7 +1,8 @@
 from PIL import Image as image
+from PIL import ImageFilter
 from pprint import pprint
 img  = image.open("/Users/emodatt08/Desktop/flip2.png")
-img2 = image.open("/Users/emodatt08/Desktop/error.png")
+img2 = image.open("/Users/emodatt08/Desktop/mode.png")
 
 #get image size and format
 def size_and_format():
@@ -56,5 +57,34 @@ def merge_image():
     new = image.merge('RGB', (r1,g1,b))
     new.show()
 
+### Transformation effects
+def transformations():
+    #transform image into a small square shape image
+#    square = img2.resize((350, 250))
+#    square.show()
 
-merge_image()
+     #flip image left and right
+#    flip = img.transpose(image.FLIP_LEFT_RIGHT)
+#    flip.show()
+
+    #flip image top to bottom
+#    flip = img.transpose(image.FLIP_TOP_BOTTOM)
+#    flip.show()
+
+    #rotate image 90%
+   flip = img.transpose(image.ROTATE_270)
+   flip.show()
+
+
+def modes_filters():
+    #convert into luminate(black and white) format
+    black_white = img.convert('L')
+    #blur the image
+    blur_image = img.filter(ImageFilter.BLUR)
+    #gets the edges of an image
+    edges = img2.filter(ImageFilter.FIND_EDGES)
+    edges.show()
+
+
+#call function
+modes_filters()
