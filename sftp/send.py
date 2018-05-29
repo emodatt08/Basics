@@ -26,9 +26,11 @@ class SFTP:
             print str(e)
 
 #pprint('/var/www/html/'+ str(datetime.now().year) + '/' + str(datetime.now().strftime('%B')) + '/' + 'flip2.png')
-#set remote server Url
-remoteUrl = "156.0.235.14"
+#set remote server Url, username, password
+remoteUrl = ""
+remoteUser = ""
+remotePass = ""
 #Initialize class with server credentials
-sftp = SFTP(remoteUrl, "fone", "KwameIsaBoy19")
+sftp = SFTP(remoteUrl, remoteUser, remotePass)
 #send file to remote server
 sftp.sendFile()
